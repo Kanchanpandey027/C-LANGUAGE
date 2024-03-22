@@ -3,14 +3,7 @@
 
 int main()
 {
-   printf("########\n#\n#\n#####\n#\n#\n#\n\n");
-   printf("  #####\n");
-   printf("##     ##\n");
-   printf("#\n");
-   printf("#\n");
-   printf("#\n");
-   printf("#\n");
-   printf("#\n");
-   printf("##     ##\n");
-   printf("  #####\n");
+    char a='x',b='M',c='L';
+    printf("%c %c %c",c,b,a);
+
 }
