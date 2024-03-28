@@ -3,18 +3,14 @@
 
 int main()
 {
-  int id;
-  int salary;
-  int totalsalary;
-  int hr;
-  totalsalary=salary*hr;
-  printf("enter employeeid :");
-  scanf("%d",&id);
-  printf("enter salary:");
-  scanf("%d",&salary);
-  printf("enter hr :");
-  scanf("%d",&hr);
-  printf("id=%d\n",id);
-  printf("total salary=%d\n",totalsalary=salary*hr);
+    float totaldistance;
+    float fuelspent;
+    float avg;
+    avg=totaldistance/fuelspent;
+    printf("enter totaldistance:");
+    scanf("%f",&totaldistance);
+    printf("enter fuelspent:");
+    scanf("%f",&fuelspent);
+    printf("avg=%f",avg=totaldistance/fuelspent);
     return 0;
 }
