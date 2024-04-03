@@ -3,13 +3,11 @@
 
 int main()
 {
-    int a[]={1,2,3,4,5};
-    int  i=0;
-    for(i==0;i<5;i++)
+    int x;
+    printf("%d\n\n",sizeof(x));
 
-    printf("%d\n",a[i]);
-
-
-
+    int a[]={1,2,3,4,5,67,8};
+    int a_size=sizeof(a)/sizeof(a[0]);
+    printf("%d\n",a[a_size-2]);
     return 0;
 }
