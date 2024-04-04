@@ -3,11 +3,26 @@
 
 int main()
 {
-    int x;
-    printf("%d\n\n",sizeof(x));
-
-    int a[]={1,2,3,4,5,67,8};
-    int a_size=sizeof(a)/sizeof(a[0]);
-    printf("%d\n",a[a_size-2]);
+    int num;
+    int even[5];
+    int i;
+    int temp=0;
+    while(1) //1 is true
+    {
+    printf("Enter any even number:\n");
+    scanf("%d",&num);
+    if(num%2==0)
+    {
+     even[i]=num;
+     i++;
+    }
+    if(i==5)
+        break;
+    }
+   for(i=0;i<5;i++)
+    temp=temp+even[i];
+    {
+        printf("sum of all even num:%d",temp);
+    }
     return 0;
 }
