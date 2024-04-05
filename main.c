@@ -3,26 +3,163 @@
 
 int main()
 {
-    int num;
-    int even[5];
-    int i;
-    int temp=0;
-    while(1) //1 is true
+    int a[3][3];
+    int b[3][3];
+    int c[3][3];
+    int i,j,num;
+    printf("enter any even number of first array");
+
+      for(i=0;i<3;i++)
     {
-    printf("Enter any even number:\n");
-    scanf("%d",&num);
-    if(num%2==0)
+        for (j=0;j<3;j++)
     {
-     even[i]=num;
-     i++;
+        while(1)
+        {
+          int num;
+              printf("enter a[%d][%d]= ",i,j);
+             scanf("%d",&num);
+             if(num%2==0)
+             {
+                 a[i][j]=num;
+                 i++;
+                 j++;
+
+             }
+             if(i==3)
+
+
+                break;
+             }
     }
-    if(i==5)
-        break;
     }
-   for(i=0;i<5;i++)
-    temp=temp+even[i];
+    printf("enter any odd number for second array:\n");
+
+        for(i=0;i<3;i++)
     {
-        printf("sum of all even num:%d",temp);
+        for (j=0;j<3;j++)
+    {
+        while(1){
+           int num;
+            printf("enter b[%d][%d]= ",i,j);
+             scanf("%d",&num);
+             if(num%2!=0)
+             {
+                 b[i][j]=num;
+                 i++;
+                 j++;
+
+             }
+             if(i==3)
+                   break;
+             }
     }
-    return 0;
-}
+    }
+
+   printf("first array is \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d",a[i][j]);
+        }
+        printf("\n");
+    }
+
+
+    printf("second array is:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d",b[i][j]);
+        }
+        printf("\n");
+    }
+
+             printf("\n\n result\n\n");
+             for(i=0;i<3;i++)
+             {
+                 for(j=0;j<3;j++)
+             {
+                 c[i][j]=a[i][j]+b[i][j];
+                 printf("%d",c[i][j]);
+             }
+             printf("\n");
+             }
+return 0 ;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
