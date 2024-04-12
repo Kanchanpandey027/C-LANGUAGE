@@ -3,10 +3,12 @@
 
 int main()
 {
-    int temp;
-    printf("enter temp:");
-    scanf("%d",&temp);
-    float f=temp *1.8000 + 32.00;
-    printf("%f degree in fahrenheit",f);
+  int r;
+  float volume;
+  printf("Enter Radius of sphere:");
+  scanf("%d",&r);
+  volume=4/3*3.14*r*r*r;
+  printf("Volume of sphere=%.2f",volume);
+
     return 0;
 }
