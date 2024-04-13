@@ -3,12 +3,13 @@
 
 int main()
 {
-  int r;
-  float volume;
-  printf("Enter Radius of sphere:");
-  scanf("%d",&r);
-  volume=4/3*3.14*r*r*r;
-  printf("Volume of sphere=%.2f",volume);
-
+    int width;
+    int height;
+    float p=2*(width+height);
+    printf("enter height of rectangle: ");
+    scanf("%d",&height);
+    printf("enter width of rectangle: ");
+    scanf("%d",&width);
+    printf("perimeter of rectangle is:%f",p=2*(width+height));
     return 0;
 }
