@@ -3,13 +3,20 @@
 
 int main()
 {
-    int width;
-    int height;
-    float p=2*(width+height);
-    printf("enter height of rectangle: ");
-    scanf("%d",&height);
-    printf("enter width of rectangle: ");
-    scanf("%d",&width);
-    printf("perimeter of rectangle is:%f",p=2*(width+height));
+    char a,b,c;
+    char d,e,f,g,h;
+    int yearofbirth;
+
+    printf("enter your firstname:\n");
+    scanf("%c %c %c",&a,&b,&c);
+    printf("enter your lastname:\n");
+    scanf("%c%c%c%c%c",&d,&e,&f,&g,&h);
+    printf("enter yearofbirth:\n");
+    scanf("%d",&yearofbirth);
+    printf("%c%c%c%c%c%c%c%c",a,b,c,d,e,f,g,h);
+
+    printf("%d",yearofbirth);
+
+
     return 0;
 }
