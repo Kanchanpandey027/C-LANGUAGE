@@ -3,20 +3,16 @@
 
 int main()
 {
-    char a,b,c;
-    char d,e,f,g,h;
-    int yearofbirth;
-
-    printf("enter your firstname:\n");
-    scanf("%c %c %c",&a,&b,&c);
-    printf("enter your lastname:\n");
-    scanf("%c%c%c%c%c",&d,&e,&f,&g,&h);
-    printf("enter yearofbirth:\n");
-    scanf("%d",&yearofbirth);
-    printf("%c%c%c%c%c%c%c%c",a,b,c,d,e,f,g,h);
-
-    printf("%d",yearofbirth);
-
-
+    int a,b;
+    int add=a+b;
+    int diff=a-b;
+    int pro=a*b;
+    int div=a/b;
+    printf("Enter any 2 no:");
+    scanf("%d %d",&a,&b);
+    printf("sum of the given no %d\n:",add=a+b);
+    printf("difference of the given no %d\n:",diff=a-b);
+    printf("product of the given no %d\n:",pro=a*b);
+    printf("division of the given no %d\n:",div=a/b);
     return 0;
 }
