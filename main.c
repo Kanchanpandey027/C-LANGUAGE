@@ -3,13 +3,12 @@
 
 int main()
 {
-    int num1;
-    int num2;
-    printf("Enter any 2 num:\n");
-    scanf("%d %d",&num1,&num2 );
-    if(num1==num2)
-    printf("num1 and num2 are equal");
+    int num;
+    printf("Enter  a number:");
+    scanf("%d",&num);
+    if((num%2)==0)
+        printf("%d is an even integer",num);
     else
-    printf("num 1 and num2 are not equal");
+        printf("%d is an odd integer",num);
     return 0;
 }
