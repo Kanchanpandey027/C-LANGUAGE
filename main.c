@@ -4,11 +4,12 @@
 int main()
 {
     int num;
-    printf("Enter  a number:");
+    printf("Enter a number:");
     scanf("%d",&num);
-    if((num%2)==0)
-        printf("%d is an even integer",num);
+    if (num>0)
+        printf("number is positive number");
     else
-        printf("%d is an odd integer",num);
+        printf("number is negative number");
+
     return 0;
 }
