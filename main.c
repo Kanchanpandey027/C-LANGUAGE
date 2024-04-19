@@ -3,13 +3,13 @@
 
 int main()
 {
-    int num;
-    printf("Enter a number:");
-    scanf("%d",&num);
-    if (num>0)
-        printf("number is positive number");
+    int year;
+    printf("enter your year:");
+    scanf("%d",&year);
+    if(year==2016)
+        printf("2016 is leapyear");
     else
-        printf("number is negative number");
+        printf("2016 is not leapyear");
 
     return 0;
 }
