@@ -3,13 +3,11 @@
 
 int main()
 {
-    int year;
-    printf("enter your year:");
-    scanf("%d",&year);
-    if(year==2016)
-        printf("2016 is leapyear");
+    int age;
+    printf("Enter your age:");
+    scanf("%d",&age);
+    if(age>=18)
+        printf("CONGRATUALTION!You are eligible for casting your vote");
     else
-        printf("2016 is not leapyear");
-
-    return 0;
+        printf("You are not eligible for casting your vote");
 }
