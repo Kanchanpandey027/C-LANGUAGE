@@ -3,11 +3,14 @@
 
 int main()
 {
-    int age;
-    printf("Enter your age:");
-    scanf("%d",&age);
-    if(age>=18)
-        printf("CONGRATUALTION!You are eligible for casting your vote");
+    int m;
+    printf("enter data:");
+    scanf("%d",&m);
+    if(m>0)
+        printf("the value of n=1");
+     else if(m=0)
+        printf("the value of n=0");
     else
-        printf("You are not eligible for casting your vote");
+         printf("the value of n=-1");
+    return 0;
 }
