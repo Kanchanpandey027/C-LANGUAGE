@@ -3,44 +3,41 @@
 
 int main()
 {
-
-
-int maths;
-int phy;
-int chem;
-int tos=maths+phy+chem;
-int a=maths+tos;
-
-    printf("enter marks obtained in physics:");
-    scanf("%d",&phy);
-    printf("enter marks obtained in maths:");
-    scanf("%d",&maths);
-    printf("enter marks obtained in chem:");
-    scanf("%d",&chem);
-    printf("total in all three sub%d\n",tos=maths+phy+chem);
-    printf("total in a",a=maths+tos);
-    if(phy>=55)
+    int rollno;
+    char n,a,m,e,s;
+    float phy;
+    float chem;
+    float comp_app;
+    float total=phy+chem+comp_app;
+    float per;
+    printf("Enter the roll number of student:");
+    scanf("%d",&rollno);
+   // printf("Enter the name of the student:");
+    //scanf("%c %c%c%c%c",&n,&a,&m,&e,&s);
+    printf("Enter the marks of phy:\n");
+    scanf("%f",&phy);
+    printf("Enter the marks of chem:\n");
+    scanf("%f",&chem);
+    printf("Enter the marks of comp_app:\n");
+    scanf("%f",&comp_app);
+    printf("total marks of student:%f\n",total=phy+chem+comp_app);
+    per=total/300*100;
+    printf("percentage:%f\n",per=total/300*100);
+    if(per>70)
     {
-        printf("The candidate is eligible for admission");
+        printf("Division =First");
     }
-    if (chem>50)
-        {
-         //printf("The candidate is eligible for admission");
-        }
-    if (maths>=65)
+    else if(per>60)
+{
+    printf("Division =Second");
+}
+  else if(per>49)
+  {
+      printf("Division=Third");
+  }
+  else
     {
-         //printf("The candidate is eligible for admission");
-    }
-    else if(tos>=180)
-    {
-        printf("The candidate is eligible for admission");
-    }
-    else if(a>=40)
-    {
-        printf("The candidate is eligible for admission");
-    }
-    else {
-        printf("The candidate is not eligible for admission");
-    }
+    printf("Fail");
+  }
 }
 
