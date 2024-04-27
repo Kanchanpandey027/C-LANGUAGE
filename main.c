@@ -3,20 +3,17 @@
 
 int main()
 {
-int a;
-int sum=0;
+    int a;
+    int sum=0;
+    printf("the first 7 natural no:\n");
 
-printf("the first 10 natural number\n");
-
-for(a=1;a<11;a++)
+    for (a=1;a<8;a++)
+    {
+        sum=sum+a;
+        printf("%d\n",a);
+    }
 {
-    sum=sum+a;
-    printf("%d\n",a);
+    printf("the sum of natural number upto 7 terms:%d",sum);
 }
-{
-printf("sum is:%d\n",sum);
-}
-
-
     return 0;
 }
