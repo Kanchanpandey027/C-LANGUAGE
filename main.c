@@ -5,15 +5,19 @@ int main()
 {
     int a;
     int sum=0;
-    printf("the first 7 natural no:\n");
-
-    for (a=1;a<8;a++)
+    float avg=0;
+    printf("the first 10 number\n");
+    for(a=1;a<11;a++)
     {
         sum=sum+a;
-        printf("%d\n",a);
+        avg=sum/2;
+        printf("%d\n",&a);
     }
-{
-    printf("the sum of natural number upto 7 terms:%d",sum);
-}
+    {
+        printf("sum%d\n",sum);
+    }
+    {
+        printf("avg%f\n",avg);
+    }
     return 0;
 }
