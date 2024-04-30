@@ -3,21 +3,12 @@
 
 int main()
 {
-    int a;
-    int sum=0;
-    float avg=0;
-    printf("the first 10 number\n");
-    for(a=1;a<11;a++)
+    int a,cube;
+    printf("input number of terms:");
+    scanf("%d",&cube);
+    for(a=1;a<=cube;a++)
     {
-        sum=sum+a;
-        avg=sum/2;
-        printf("%d\n",&a);
-    }
-    {
-        printf("sum%d\n",sum);
-    }
-    {
-        printf("avg%f\n",avg);
+        printf("number is :%d and cube of the %d is:%d\n",a,a,(a*a*a));
     }
     return 0;
 }
