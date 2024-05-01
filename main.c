@@ -3,12 +3,12 @@
 
 int main()
 {
-    int a,cube;
-    printf("input number of terms:");
-    scanf("%d",&cube);
-    for(a=1;a<=cube;a++)
+    int a,mul;
+    printf("input the number:\n");
+    scanf("%d",&mul);
+    for(a=1;a<=10;a++)
     {
-        printf("number is :%d and cube of the %d is:%d\n",a,a,(a*a*a));
+        printf("15*%d=%d\n",a,mul*a);
     }
     return 0;
 }
