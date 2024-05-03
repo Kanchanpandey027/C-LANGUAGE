@@ -2,19 +2,18 @@
 #include <stdlib.h>
 
 int main()
-
 {
-    int a,b,m;
-    printf("Input upto the table number  starting from 1 : ");
-    scanf("%d",&m);
-    printf("multiplication table from 1 to %d \n",m);
-    for(b=1;b<=10;b++)
+    int a;
+    int sum=0;
+    printf("the odd number are :");
+    scanf("%d",& a);
+    for(a=1;a<=20;a= a + 2)
     {
-    for(a=1;a<=m;a++)
-        {
-    printf("%d*%d=%d\t",a,b,a*b);
+        sum=sum+a;
+      printf("%d ",a);
     }
-    printf("  \n");
-}
+    {
+        printf("\nthe sum of odd  natural number upto 10 terms :%d",sum);
+    }
     return 0;
 }
