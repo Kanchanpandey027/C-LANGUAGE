@@ -3,17 +3,20 @@
 
 int main()
 {
-    int a;
-    int sum=0;
-    printf("the odd number are :");
-    scanf("%d",& a);
-    for(a=1;a<=20;a= a + 2)
+    int a[10];
+    int i;
+    for(i=0;i<10;i++)
     {
-        sum=sum+a;
-      printf("%d ",a);
-    }
-    {
-        printf("\nthe sum of odd  natural number upto 10 terms :%d",sum);
-    }
+      printf(" element in array are %d:",i);
+      scanf("%d",&a[i]);
+               }
+               printf("\n element in array are:");
+               for(i=0;i<10;i++)
+               {
+                   printf("%d ",a[i]);
+               }
+               printf("\n");
+
+
     return 0;
 }
