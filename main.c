@@ -3,20 +3,38 @@
 
 int main()
 {
-    int a[10];
+    int a[3]={2,5,7};
     int i;
-    for(i=0;i<10;i++)
+    printf("input the number of element to store in the array :3\n");
+    printf("input 3 number of element in the array:\n");
+    for(i=0;i<3;i++)
+
     {
-      printf(" element in array are %d:",i);
-      scanf("%d",&a[i]);
+          printf("element a[%d]=%d\n",i,a[i]);
+
                }
-               printf("\n element in array are:");
-               for(i=0;i<10;i++)
+               printf("the value stored in array is:");
+               for(i=0;i<3;i++)
                {
-                   printf("%d ",a[i]);
+                   printf(" %d ",a[i]);
                }
-               printf("\n");
+               printf(" \n");
+               printf( "element in reverse order : ");
+               for(i=2;i>=0;i--)
+                {
+                    printf("%d ",a[i]);
+                }
+
 
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
