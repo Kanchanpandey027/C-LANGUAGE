@@ -3,38 +3,19 @@
 
 int main()
 {
-    int a[3]={2,5,7};
-    int i;
-    printf("input the number of element to store in the array :3\n");
-    printf("input 3 number of element in the array:\n");
-    for(i=0;i<3;i++)
+int b[3]={2,5,8};
+int i,num;
+int sum=0;
+for(i=0;i<3;i++)
 
-    {
-          printf("element a[%d]=%d\n",i,a[i]);
+{
+    printf("element  b[%d]=%d\n",i,b[i]);
+    sum+=b[i];
+}
 
-               }
-               printf("the value stored in array is:");
-               for(i=0;i<3;i++)
-               {
-                   printf(" %d ",a[i]);
-               }
-               printf(" \n");
-               printf( "element in reverse order : ");
-               for(i=2;i>=0;i--)
-                {
-                    printf("%d ",a[i]);
-                }
-
+    printf("sum of array is:%d",sum);
 
 
     return 0;
 }
-
-
-
-
-
-
-
-
 
