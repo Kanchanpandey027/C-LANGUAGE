@@ -3,23 +3,8 @@
 
 int main()
 {
-    int i,j;
-    int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    for(i=0;i<3;i++)
-    {
-        for(j=0;j<3;j++)
-        printf("element a[%d][%d]=%d\n",i,j,a[i][j]);
-    }
-            for(i=0;i<3;i++)
-            {
-              for(j=0;j<3;j++)
-
-            {
-               printf("%d  ",a[i][j]);
-            }
-   {
-           printf("\n");
-   }
-            }
+    char greeting[8]={'W','e','l','c','o','m','e','\0'};
+    char gr[11]={'w','3','r','e','s','o','u','r','c','e','\0'};
+    printf("the string you entered is :%s,%s\n",greeting,gr);
     return 0;
 }
