@@ -3,10 +3,16 @@
 
 int main()
 {
-    char str[15]={'w','3','r','e','s','o','u','r','c','e','.','c','o','m','.','\0'};
-    int len;
-    len=strlen(str);
-
-    printf("length of string is : %d\n",len);
+    char str[20];
+    int l=0;
+    printf("input the string : ");
+    scanf("%s",str);
+    printf("the characters of the string are :\n");
+    while(str[l]!='\0')
+        {
+    printf("%c  ",str[l]);
+    l++;
+        }
+        printf("\n");
     return 0;
 }
