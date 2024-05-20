@@ -3,16 +3,10 @@
 
 int main()
 {
-    char str[20];
-    int l=0;
-    printf("input the string : ");
-    scanf("%s",str);
-    printf("the characters of the string are :\n");
-    while(str[l]!='\0')
-        {
-    printf("%c  ",str[l]);
-    l++;
-        }
-        printf("\n");
+
+    char s[20]="w 3 r e s o u r c e . c o m";
+    strrev(s);
+    printf("strrev(s):%s",s);
+
     return 0;
 }
